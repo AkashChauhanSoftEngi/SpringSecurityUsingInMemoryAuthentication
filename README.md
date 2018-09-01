@@ -24,7 +24,7 @@
 * Spring Security is a web authentication and authorization framework for Java Servlet web applications or REST services
 * It installs a chain of servlet filters in front of the application’s filters and servlets[DS], at startup
 * A another similar framework available at Apache Shiro
-* Add these jars 	
+* Add Spring compatible jars {spring-security-web, spring-security-config, spring-security-taglibs}
 * Need to create a class to extend AbstractSecurityWebApplicationInitializer
 * Spring Security is useable to confirm the points a) and b) 
 ```diff
