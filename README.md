@@ -16,9 +16,9 @@
 * $ mvn tomcat7:run
 
 > **###3.  Access** 
-* http://localhost:8080/SpringSecurityUsingInMemoryAuth/Spring/
-* http://localhost:8080/SpringSecurityUsingInMemoryAuth/Spring/user
-* http://localhost:8080/SpringSecurityUsingInMemoryAuth/Spring/admin
+* http://localhost:8080/SpringSecurityUsingInMemoryAuth/
+* http://localhost:8080/SpringSecurityUsingInMemoryAuth/user
+* http://localhost:8080/SpringSecurityUsingInMemoryAuth/admin
 
 > **###4.  Important Points to keep in mind**
 * Spring Security is a web authentication and authorization framework for Java Servlet web applications or REST services
@@ -53,8 +53,7 @@
 > **###7. How Spring Security communicate with DispatcherServlet**
 * Before using DispatcherServlet filters, the flow has to go through security filters like (FilterChainProxy.doFilter())
 * And as the job of the DispatcherServlet is to take an incoming URI and find the right combination of handlers (generally methods on Controller classes) and views (generally JSPs) that combine to form the page or resource that's supposed to be found at that location.
-* One way to do that is: 
-  a) Need to override an method startUp() from WebApplicationInitializer interface
+* One way to do that is we need to override an method called startUp() from WebApplicationInitializer interface and then
  	- Create a context
 	- Use this context to register all configuration files (@Configuraion files)
 	- Then creating and adding a dynamic servlet, and then pass this context as parameter
