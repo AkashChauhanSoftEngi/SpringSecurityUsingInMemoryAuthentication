@@ -53,7 +53,7 @@
 > **###7. How Spring Security communicate with DispatcherServlet**
 * Before using DispatcherServlet filters, the flow has to go through security filters like (FilterChainProxy.doFilter())
 * And as the job of the DispatcherServlet is to take an incoming URI and find the right combination of handlers (generally methods on Controller classes) and views (generally JSPs) that combine to form the page or resource that's supposed to be found at that location.
-* One way to do that is we need to override an method called startUp() from WebApplicationInitializer interface and then
+* One way to do that is we need to override a method called startUp() from WebApplicationInitializer interface and then
  	- Create a context
 	- Use this context to register all configuration files (@Configuraion files)
 	- Then creating and adding a dynamic servlet, and then pass this context as parameter
