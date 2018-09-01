@@ -41,10 +41,10 @@
 ```
 > **###5. JSP Communication with DS,Controller**
 * From JSP page in given project, it is checking security concerns by using these 
-  -access="isAnonymous()"
-  -access="sAuthenticated()"
-  -access="hasRole('USER')"
-  -To confirm Authentication and Autherization of the user, it will forward to a predefined "LoginPage" and then will check the credentials from the stroed Configuraion Builders like HttpSecurity and AuthenticationManagerBuilder
+  - access="isAnonymous()"
+  - access="sAuthenticated()"
+  - access="hasRole('USER')"
+  - To confirm Authentication and Autherization of the user, it will forward to a predefined "LoginPage" and then will check the credentials from the stroed Configuraion Builders like HttpSecurity and AuthenticationManagerBuilder
 
 > **###6. Work Flow**
 * web->Security Filter->Filters if any + Web App filter if any->DispatcherServlet->(Controllers + JSPs)
@@ -54,9 +54,9 @@
 * Before using DispatcherServlet filters, the flow has to go through security filters like (FilterChainProxy.doFilter())
 * And as the job of the DispatcherServlet is to take an incoming URI and find the right combination of handlers (generally methods on Controller classes) and views (generally JSPs) that combine to form the page or resource that's supposed to be found at that location.
 * One way to do that is: 
-	a) Need to override an method startUp() from WebApplicationInitializer interface
-		- Create a context
-		- Use this context to register all configuration files (@Configuraion files)
-		- Then creating and adding a dynamic servlet, and then pass this context as parameter
-		- Then you can set the priority of the filter
-		- You can use addMapping("URL") to map incoming url{to bind what kind of URL this filter will pass[example: "/*"]}
+  a) Need to override an method startUp() from WebApplicationInitializer interface
+ 	- Create a context
+	- Use this context to register all configuration files (@Configuraion files)
+	- Then creating and adding a dynamic servlet, and then pass this context as parameter
+	- Then you can set the priority of the filter
+	- You can use addMapping("URL") to map incoming url{to bind what kind of URL this filter will pass[example: "/*"]}
