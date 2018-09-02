@@ -1,6 +1,7 @@
 # SpringSecurityUsingInMemoryAuthentication
 
 * Spring Framework + Spring Security + Java Configuration + MVC + Maven , Example
+* Spring Security using, AuthenticationManagerBuilder.inMemoryAuthentication...
 * Spring Security example for Spring 4 MVC + JSP View with pure Java Configuration (no XML), using Maven build tool.
 * Spring4 + MVC, Integration without using the web.xml and Spring_Servlet.xml file. 
 * By using WebMvcConfigurerAdapter class and WebApplicationInitializer interface to replace above files.
